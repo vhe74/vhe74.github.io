@@ -17,5 +17,5 @@ jobs:
           author_name: Vincent Heuschling
           author_email: vhe74@affini-tech.com 
           message: 'Built and published'
-          add: '*'
+          add: 'docs/**'
       - run: echo "🍏 This job's status is ${{ job.status }}."
