@@ -9,5 +9,6 @@ jobs:
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
       - run: pwd
       - run: ls
+      - run: chmod +x build.sh
       - run: ./build.sh
       - run: echo "🍏 This job's status is ${{ job.status }}."
