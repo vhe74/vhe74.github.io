@@ -7,3 +7,7 @@ wget https://github.com/gohugoio/hugo/releases/download/v0.84.4/hugo_0.84.4_Linu
 sudo dpkg -i hugo_0.84.4_Linux-64bit.deb
 sudo apt-get install -f
 hugo version
+
+cd src
+hugo -d ../docs
+

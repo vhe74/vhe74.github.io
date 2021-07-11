@@ -11,4 +11,11 @@ jobs:
       - run: ls
       - run: chmod +x build.sh
       - run: ./build.sh
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v7
+        with:
+          author_name: Vincent Heuschling
+          author_email: vhe74@affini-tech.com 
+          message: 'Built and published'
+          add: '*'
       - run: echo "🍏 This job's status is ${{ job.status }}."
